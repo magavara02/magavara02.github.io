@@ -189,7 +189,7 @@ body{
 .slide2 .content p:nth-child(1){
     color: white;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .slide2 .content a{
@@ -211,7 +211,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     overflow-y: auto;
-    height: 80vh;
+    height: 75vh;
 }
 
 .slide2 .content .projects::-webkit-scrollbar{
