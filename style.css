@@ -126,7 +126,7 @@ body{
     color: white;
     position: absolute;
     bottom: 5rem;
-    left: 50%;
+    left: 47%;
     cursor: pointer;
     animation: 10s infinite chevronAttention;
     animation-fill-mode: forwards;
