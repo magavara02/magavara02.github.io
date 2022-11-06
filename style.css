@@ -271,6 +271,13 @@ body{
   .slide1{
     background-position: right;
   }
+
+  .slide1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -288,12 +295,12 @@ body{
     font-size: 13px;
   }
 
-  .slide1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  .slide2 .content a{
+    width: 18rem;
+    height: 8rem;
+}
+
+  
 }
 
 .navbar, .slide1 ,.slide2{
