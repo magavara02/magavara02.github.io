@@ -9,7 +9,7 @@ aboutMeText.style.height = aboutMeText2.innerHeight;
 console.log(aboutMeText2.offsetHeight);
 aboutMeText.textContent = "";
 var chevron1 = document.querySelector(".slide1 .content .fa-chevron-down");
-var aboutMeString = "Hey, Im jason, Im 22 years old and A full-stack web developer for 5 years!";
+var aboutMeString = "Hey, Im jason, Im 22 years old and a full-stack web developer for 5 years!";
 var counter = 0;
 
 
