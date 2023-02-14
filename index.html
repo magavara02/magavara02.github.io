@@ -4,97 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/430b8d826f.js" crossorigin="anonymous"></script>
+    <title>Jason de Boer</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Jason</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/430b8d826f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="navbar">
-        <img src="images/logo2_preview_rev_1.png" alt="">
-        <div class="navItems">
-            <p class="active">Home</p>
-            <p>About</p>
-            <p>Projects</p>
-            <p>Contact</p>
+    <div class="content">
+        <div class="slide1">
+            <lottie-player class="wave-vid" src="https://assets5.lottiefiles.com/packages/lf20_alhatqgp.json"  background="transparent"  speed=".5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            <p>Welcome to my page!</p>
+            <lottie-player class="scroll-vid" src="scroll.json"  background="transparent"  speed=".5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            
         </div>
-    </div>
-    <div class="slide1">
-        <div class="content">
-            <p class="aboutMeText"></p>
-            <p class="aboutMeText2">Hey, Im jason, Im 22 years old and a <span>full-stack</span> web developer for 5 years!</p>
-            <i class="fa-solid fa-chevron-down"></i>
-            <div class="aboutMeDiv">
+        <div class="slide2">
+            <p></p>
+            <div class="jasonImage">
+                <div class="flip">
+                    <div></div>
+                    <img src="images/jason.jpg" alt="">
+                </div>
+            </div>
+            <lottie-player class="scroll-vid2" src="scroll.json"  background="transparent"  speed=".5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        </div>
+
+        <div class="slide3">
+            <p class="title">Tools and Technologies I Utilize for Web Development</p>
+            <div class="TaT">
+                <div class="languages">
+                    <p>Languages I use</p>
+                    <div class="icons">
+                        <img src="images/html-5-svgrepo-com.svg" alt="">
+                        <img src="images/css-3-svgrepo-com.svg" alt="">
+                        <img src="images/javascript-svgrepo-com.svg" alt="">
+                        <img src="images/php-svgrepo-com.svg" alt="">
+                        <img src="images/sql-database-sql-azure-svgrepo-com.svg" alt="">
+                        <img src="images/node-js-svgrepo-com.svg" alt="">
+                    </div>
+                </div>
+                <div class="tools">
+                    <p>Tools, software and sites I use</p>
+                    <div class="icons">
+                        <img src="images/visual-studio-code-svgrepo-com.svg" alt="">
+                        <img src="images/HeidiSQL_logo_image.png" alt="">
+                        <img src="images/Google_Chrome_icon_(February_2022).svg.png" alt="">
+                        <img src="images/logo-firefox-browser.fbc7ffbb50fd.png" alt="">
+                        <img src="images/512x512bb.jpg" alt="">
+                        <img src="images/undraw-400x300.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="slide2">
-        <div class="content">
-            <p>Published Projects</p>
+        <div class="slide4">
+            <p class="title">My projects</p>
             <div class="projects">
+                <a href="https://magavara02.github.io/creditcard/"><div class="project">
+                    <img src="images/projects/creditCard.PNG" alt="">
+                    <div class="projectInfo">
+                        <p>Interactive card details form</p>
+                        <p>I have selected this challenge on frontendmentor.io as an opportunity to showcase my skills and enhance my professional development.</p>
+                    </div>
+                </div></a>
+                <a href="https://magavara02.github.io/snake/"><div class="project">
+                    <img src="images/projects/snake.PNG" alt="">
+                    <div class="projectInfo">
+                        <p>Snake</p>
+                        <p>Classic snake</p>
+                    </div>
+                </div></a>
                 <a href="https://magavara02.github.io/tic-tac-to/"><div class="project">
                     <img src="images/projects/TicTacTo.png" alt="">
                     <div class="projectInfo">
                         <p>TicTacTo</p>
-                        <p>I've made this project using vmin instead of rem or px. All the winning patterns are generated not hard coded so that was a real challenge.</p>
+                        <p>I crafted this project utilizing the vmin unit instead of rem or px. The winning patterns were generated programmatically, which presented a significant challenge.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/Hangman/"><div class="project">
                     <img src="images/projects/Hangman.png" alt="">
                     <div class="projectInfo">
                         <p>Hangman</p>
-                        <p>Hangman is a game where your friend types in a word and you need to guess the word. I have also made a solo version where the words are received from an API</p>
+                        <p>The Hangman game involves a player guessing a word that is input by a friend, and I have also developed a solo version that retrieves words from an API.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/question-game/"><div class="project">
                     <img src="images/projects/questionGame.png" alt="">
                     <div class="projectInfo">
                         <p>Quiz game</p>
-                        <p>This is a simple quiz game made in about 30 minutes to test my API skills. It throws alot of errors in the console but whatever it works.</p>
+                        <p>This is a straightforward quiz game that I created to demonstrate my API proficiency. Although it generates a substantial amount of errors in the console, it functions as intended.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/word-game/"><div class="project">
                     <img src="images/projects/wordGame.png" alt="">
                     <div class="projectInfo">
                         <p>Lingo</p>
-                        <p>This is like a dutch game called lingo. All the words are comming from an API. This project took me about 1 and a half day to make. This was a very fun project to make.</p>
+                        <p>This project is inspired by a Dutch game known as Lingo. The words are retrieved from an API, and it took me approximately one and a half day to complete. The development of this project was a highly enjoyable experience.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/number-game/"><div class="project">
                     <img src="images/projects/numberGame.png" alt="">
                     <div class="projectInfo">
                         <p>Number game</p>
-                        <p>This is a game where you play against an AI. You need to reach the number 100 first.</p>
+                        <p>This is a game of NO skill where you compete against an AI, with the objective of reaching the number 100 first.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/interactive-rating-component/"><div class="project">
                     <img src="images/projects/ratingComponent.png" alt="">
                     <div class="projectInfo">
                         <p>Rating component</p>
-                        <p>This is challenge i chose to make on www.frontendmentor.io</p>
+                        <p>I have selected this challenge on frontendmentor.io as an opportunity to showcase my skills and enhance my professional development.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/tip-calculator/"><div class="project">
                     <img src="images/projects/tipCalculator.png" alt="">
                     <div class="projectInfo">
                         <p>Tip calculator</p>
-                        <p>This is challenge i chose to make on www.frontendmentor.io</p>
+                        <p>I have selected this challenge on frontendmentor.io as an opportunity to showcase my skills and enhance my professional development.</p>
                     </div>
                 </div></a>
                 <a href="https://magavara02.github.io/recipesAPI/"><div class="project">
                     <img src="images/projects/Recipes.png" alt="">
                     <div class="projectInfo">
                         <p>Recipes</p>
-                        <p>Get the recipe for any food. This was one of my firsts API projects and i've learned alot out of it.</p>
+                        <p>Obtain a recipe for any food item of your choice. This project was one of my early forays into working with APIs, and it was an enlightening experience.</p>
                     </div>
                 </div></a>
             </div>
