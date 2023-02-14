@@ -39,7 +39,7 @@ function drawShapes(){
     objects.forEach((element) =>{observer.observe(element)});
 }
 
-var shapeTimer = setInterval(drawShapes, 2000);
+// var shapeTimer = setInterval(drawShapes, 2000);
 
 var canScroll = true;
 var slidePos = 1;
@@ -208,6 +208,7 @@ document.addEventListener("wheel", (e)=>{
             }
 
             if(slidePos == 4){
+                canScroll = false
                 if(returned){
                     window.history.pushState({}, "", "index.html");
                     returned = false;
@@ -229,8 +230,6 @@ document.addEventListener("wheel", (e)=>{
                             document.querySelector(".slide3").style.display = "block";
                             document.querySelector(".slide3").style.animation = "scrollFromTop 1.2s forwards";
 
-                            slidePos = 3;
-                            canScroll = false;
                             const icons = document.querySelectorAll(".slide3 img");
                             var counter2 = 0;
                             setTimeout(() => {
@@ -240,8 +239,7 @@ document.addEventListener("wheel", (e)=>{
                                     if(counter2 == icons.length){
                                         clearInterval(tempInterval1);
                                         
-                                        canScroll = true;
-                                        slidePos = 3;
+                                        
                                         document.querySelectorAll(".slide4 .projects a").forEach((e)=>{
                                             e.style = null;
                                         })
@@ -251,10 +249,13 @@ document.addEventListener("wheel", (e)=>{
                             }, 1000);
 
 
+                            document.querySelector(".slide3 .imgLast").addEventListener("animationend", ()=>{
+                                canScroll = true;
+                                slidePos = 3;
+                                document.querySelector(".slide3 .imgLast").removeEventListener("animationend");
+                            })
 
-
-                            canScroll = true;
-                            slidePos = 3;
+                            
                             
                         }
                     }, 100);
