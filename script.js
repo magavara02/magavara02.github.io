@@ -39,7 +39,7 @@ function drawShapes(){
     objects.forEach((element) =>{observer.observe(element)});
 }
 
-// var shapeTimer = setInterval(drawShapes, 2000);
+var shapeTimer = setInterval(drawShapes, 2000);
 
 var canScroll = true;
 var slidePos = 1;
