@@ -43,9 +43,35 @@ var shapeTimer = setInterval(drawShapes, 2000);
 
 var canScroll = true;
 var slidePos = 1;
+var returned = false;
 if(window.location.search == "?a=1"){
+    returned = true;
     slidePos = 4;
+    canScroll = true;
     document.querySelector(".slide1").style.display = "none";
+                const icons = document.querySelectorAll(".slide4 .projects a");
+                    var counter = 0;
+
+                        var tempInterval1 = setInterval(() => {
+                            icons[counter].style = null;
+                            icons[counter].style.animation = "popup 1s forwards";
+                            counter++;
+                            if(counter == icons.length){
+                                clearInterval(tempInterval1);
+                                
+                                canScroll = true;
+                                slidePos = 4;
+                                document.querySelectorAll(".slide3 img").forEach((e)=>{
+                                    e.style = null;
+                                })
+                                
+                            }
+                        }, 100);
+                            document.querySelector(".slide4").style.display = "block";
+
+                    document.querySelector(".slide4 .title").style.animation = "scrollFromRight 1s forwards";
+
+
 }
 
 document.addEventListener("wheel", (e)=>{
@@ -182,6 +208,10 @@ document.addEventListener("wheel", (e)=>{
             }
 
             if(slidePos == 4){
+                if(returned){
+                    window.history.pushState({}, "", "index.html");
+                    returned = false;
+                }
                 const icons = document.querySelectorAll(".slide4 .projects a");
                 var counter3 = 0;
                 setTimeout(() => {
