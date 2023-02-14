@@ -239,7 +239,7 @@ document.addEventListener("wheel", (e)=>{
 
 
 var text = "I am Jason, a talented and driven web developer with a passion for creating engaging and user-friendly websites. At 22 years old, I bring a fresh and innovative approach to web development, combining technical skills with creativity to deliver outstanding results. Whether working on a new project or enhancing an existing one, I am committed to delivering high-quality solutions that exceed expectations."
-text = "test";
+// text = "test";
 const slide2Text = document.querySelector(".slide2 p");
 
 
@@ -278,4 +278,12 @@ document.querySelectorAll(".slide4 .projects a").forEach((e,i)=>{
     e.addEventListener("mouseleave",()=>{
         console.log(e.querySelector(".projectInfo").style.opacity = null);
     })
+})
+
+document.querySelector(".slide4 .projects").addEventListener("mouseenter", ()=>{
+    canScroll = false;
+})
+
+document.querySelector(".slide4 .projects").addEventListener("mouseleave", ()=>{
+    canScroll = true;
 })
