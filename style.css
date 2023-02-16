@@ -15,6 +15,7 @@ body{
     justify-content: center;
     /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  */
     background: linear-gradient(to left, #8f94fb, #4e54c8);
+    overflow: hidden;
 }
 
 .shape1{
@@ -80,6 +81,8 @@ body{
 
 .slide1 .wave-vid{
     margin: 0 auto 0 auto;
+    height: 300px;
+    width: 300px;
 }
 
 @keyframes scaleDown {
@@ -164,6 +167,8 @@ body{
 
 .slide1 .scroll-down-vid, .scroll-vid{
     margin: 0 auto 0 auto;
+    height: 300px;
+    width: 300px;
 }
 
 .slide1 .scroll-vid{
@@ -470,3 +475,136 @@ body{
     text-align: center;
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .slide1 p{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .slide1 .wave-vid{
+    height: 200px;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .slide1 .scroll-vid{
+
+  }
+
+  .slide1{
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 870px) {
+  .slide3 .TaT .languages .icons{
+    height: 65vh;
+  }
+
+  .slide3 .TaT .tools .icons{
+    height: 65vh;
+  }
+}
+
+@media screen and (max-height: 650px) {
+    .slide3 .TaT .languages .icons{
+      height: 70vh;
+      width: 15rem;
+    }
+  
+    .slide3 .TaT .tools .icons{
+      height: 70vh;
+      width: 15rem;
+    }
+
+    .slide3 .TaT .languages .icons img{
+        width: 100px;
+      }
+    
+      .slide3 .TaT .tools .icons img{
+        width: 100px;
+      }
+  }
+
+@media screen and (max-width: 1100px) {
+    .slide2{
+        transform: scale(.8);
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .slide3 .title{
+        width: 100vw;
+        font-size: 2rem;
+    }
+
+    .slide3 .icons img{
+        width: 100px;
+    }
+
+    .slide3 .TaT .languages .icons{
+        width: 15rem;
+    }
+
+    .slide3 .TaT .tools .icons{
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+  .slide2{
+    flex-direction: column-reverse;
+  }
+
+  .slide2 p{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .slide2 .scroll-vid2{
+    visibility: hidden;
+  }
+
+  .slide3 .title{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .slide3 .TaT .languages p, .slide3 .TaT .tools p{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+    .slide3 .TaT .languages .icons{
+        height: 60vh;
+        width: 13rem;
+      }
+    
+      .slide3 .TaT .tools .icons{
+        height: 60vh;
+        width: 13rem;
+      }
+  
+      .slide3 .TaT .languages .icons img{
+          width: 70px;
+        }
+      
+        .slide3 .TaT .tools .icons img{
+          width: 70px;
+        }
+  
+}
+
+@media screen and (max-width: 500px) {
+    .slide3{
+        scale: 0.8;
+    }
+
+    .slide3 .title{
+        margin: 0px;
+    }
+}
+

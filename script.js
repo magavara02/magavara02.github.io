@@ -39,7 +39,7 @@ function drawShapes(){
     objects.forEach((element) =>{observer.observe(element)});
 }
 
-var shapeTimer = setInterval(drawShapes, 2000);
+// var shapeTimer = setInterval(drawShapes, 2000);
 
 var canScroll = true;
 var slidePos = 1;
@@ -75,7 +75,7 @@ if(window.location.search == "?a=1"){
 }
 
 document.addEventListener("wheel", (e)=>{
-    console.log("current slide = " + slidePos + " and cantScroll = " + canScroll)
+    console.log("current slide = " + slidePos + " and cantScroll = " + canScroll);
     if(canScroll){
         canScroll = false;
         if(e.deltaY > 0){
